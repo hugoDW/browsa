@@ -72,44 +72,23 @@ main {
     letter-spacing: 0.07em;
 }
 
-.hero-btn {
+.hero-email {
     opacity: 0;
     animation: rise 0.7s 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     position: relative;
     z-index: 1;
+    color: var(--black);
+    text-decoration: none;
+    transition: color 0.08s;
+}
+
+.hero-email:hover {
+    color: var(--green);
 }
 
 @keyframes rise {
     from { opacity: 0; transform: translateY(10px); }
     to   { opacity: 1; transform: translateY(0);    }
-}
-
-/* ── Paper plane button ──────────────────────────────────────────── */
-.plane-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 64px;
-    height: 64px;
-    color: var(--black);
-    text-decoration: none;
-    border: 2px solid var(--black);
-    background: var(--white);
-    transition: background 0.08s, color 0.08s, border-color 0.08s;
-}
-
-.plane-btn svg {
-    transform: translate(-1px, 1px);
-    transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.plane-btn:hover {
-    background: var(--green);
-    border-color: var(--green);
-}
-
-.plane-btn:hover svg {
-    transform: translate(2px, -2px);
 }
 
 /* ── Responsive ──────────────────────────────────────────────────── */
