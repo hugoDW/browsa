@@ -16,6 +16,7 @@ html {
 }
 
 body {
+    font-family: 'Fraunces', Georgia, serif;
     background-color: var(--white);
     background-image:
         linear-gradient(to right,  rgba(51,20,20,0.13) 1px, transparent 1px),
